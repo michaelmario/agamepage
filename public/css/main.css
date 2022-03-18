@@ -1,0 +1,304 @@
+body{
+    background-color: rgb(200, 26, 26);
+}
+.container{
+    width: 100%;
+    height: 100%;    
+}
+#left-content{
+line-height:3;
+color:chocolate !important;
+font-weight: bolder;
+}
+#center-content{
+color:rgb(26, 177, 6);
+font-weight:thin;
+font-size: medium;
+line-height: 3;
+}
+.fa > .fa-map-marker{
+    font-size:1.5rem;
+    line-height: 3; 
+}
+.fa{
+    color:chocolate !important;
+    font-size:1.5rem  !important;
+}
+.fa:hover{
+    color:rgb(26, 177, 6) !important;
+} 
+.menu{
+    width: 100%;
+    height: 50px;
+    margin-top:0px; 
+    margin-left:10%;
+    display:flex;
+   } 
+   .menu li{
+      list-style: none;
+      line-height: 2;          
+         display:inline-block;
+         margin-left:20px;
+         margin-right:20px;
+         margin-top:20px;
+         margin-bottom:20px;
+         font-size:20px;
+         font-weight:bold;
+         text-transform: uppercase;
+         color:rgb(0,0,0) !important;
+   }
+   .menu li > a{
+       text-decoration: none;
+       color:chocolate !important;
+   }
+   .menu li > a:hover{
+       color:rgb(26, 177, 6) !important;
+   }
+   .page_item a{
+         color:rgb(0,0,0) !important;
+    }
+   a{
+       text-decoration: none;      
+   }
+   header{
+       width:100%;
+       height:100px;
+       background-color: rgba(0, 0, 0, 0.548);
+       border-bottom: 2px solid #ccc;
+       position:fixed;
+       z-index: 90;
+   }
+  
+   #navigation{
+    position:fixed;
+    z-index: 100;
+   }
+
+   .caption{
+       margin-top:350px !important;
+       color:#ccc !important;
+   }
+    .caption h1{
+         font-size:50px;
+         font-weight:bold;
+         color:chocolate !important;
+    }
+    .caption p{
+        font-size:20px;
+        font-weight:bold;
+        color:rgb(236, 231, 228) !important;
+    }
+   .captionUl li{
+   font-weight: bolder;
+   font-size:20px;
+   color:chocolate !important;
+
+   }
+   #index{
+         margin-top:-100px;       
+   }
+   /*FOOTER*/
+   #footer{
+      background-color: rgb(48, 58, 48)!important;
+      height:150px;
+      width:100%; 
+      margin-top:50px !important;
+   }
+   
+/* END FOOTER */
+   .sizesmall img{
+         width:50px !important;
+         height: 50px !important;
+         margin-top:50px;
+   }
+   .textSlide {
+    background-image: url(../images/first.jpg);
+     object-fit: cover;
+     object-fit: contain;
+     background-size: cover;
+     height:80vh;
+     width: 100%;
+     overflow: hidden;
+ }
+
+ .bannerPage:before{   
+    content: "";
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1);
+    background-image: url(../images/panorama-min.jpg);
+     background-size: cover;
+    background-attachment: fixed;
+    -webkit-animation:increase 50s linear 10ms infinite;
+    animation:increase 50s linear 10ms infinite;
+    transition: all .4s ease-in-out;
+    z-index: -2;
+}
+  
+ 
+.bannerPage{
+ height: 80vh;
+overflow: hidden;
+color: #fff;
+position: relative;
+background-repeat: no-repeat;
+background-position: 0 0;
+width: 100%;
+background-size: cover;
+-o-object-fit: cover;
+object-fit: cover;
+z-index:10;
+}
+
+@-webkit-keyframes increase {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.5)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+@keyframes increase {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.5)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/*.bannerPageImg{   
+    width: 100%;
+    object-fit: cover;      
+}*/
+
+@media(width:1280px){
+    .header-content p {
+        margin-top: 5px;
+        line-height: 1;
+        font-size:20pt !important;
+       text-shadow: 4px 4px 4px rgb(12 11 11);
+    }
+    .carousel-fade {
+    top: 20px !important;
+   
+  }
+}
+ @media(max-width:768px){
+     .textSlide{
+         display:none;
+     }
+     .header-overlay{
+         width:100% !important;
+     }
+     .header-content{
+         padding-top: 0px !important;
+     }
+     .header-content h1 {
+        font-size: 41pt !important;
+    }
+    video{
+      padding:5px !important;
+      margin-top:0px;
+      height:350px !important;  
+    }
+    #NosAction{
+        margin-bottom:20px !important;
+        }
+        #NosAction >h5{
+            color:orange !important;
+
+        }    
+        .EsVideo{
+            padding:0px !important;
+            margin-top:-75px;
+        }
+        section.apply-now .item h3 {
+            color:#ffc107 !important;
+            margin-top:20px !important;
+            margin-bottom:0px !important;
+            font-weight: lighter !important;
+        }
+        .bannerPage {
+            height:34vh;
+        }
+        /*FOOTER*/
+        .prestaCard .card-title{
+            font-size: 23px !important;
+     
+        }
+        .prestaCard .card-text{
+         font-size: 13px !important;
+     
+     }
+ }
+
+ @media(max-width:768px){
+    .header-content p{
+        font-size:10px ! important;
+
+    }
+    .header-content h1{
+        font-size:20pt ! important;
+    }
+    .v-header{
+    height:49vh !important;
+    }
+    .fullscreen-video-wrap{
+        left:21px;
+        margin-top:18px;
+        height:43vh;
+    }
+    .header-overlay{
+      height:49VH;
+      margin:0 !important;
+    }
+    #myVideo{
+     top:0 !important;
+     right:36px;
+    }
+     #meetings {
+     padding-top:0px !important; 
+     margin-top:0px;
+}
+}
+
+@media(max-width:960px){
+    .container{
+      padding-right:3rem;
+      padding-left:3rem;
+    }
+    .header-overlay{
+    width:90%;
+    }
+    .header-content{
+    z-index:2;
+    margin-left:5%;
+  }
+  .header-content p{
+  font-size:25pt;
+  }
+  .header-content h1{
+    font-size:50pt;
+  }
+  }
+       
+   
+
+  
